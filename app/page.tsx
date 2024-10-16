@@ -17,11 +17,14 @@ import  Navbar  from "@/components/Navbar";
 
 export default function Home() {
   const { userId } = auth();
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-black to-gray-900 text-gray-100 overflow-hidden pt-20">
-      <Navbar/>
-      <main className="container mx-auto px-4 sm:px-6 lg:px-8 relative" >
-      <div className="absolute top-20 left-10 animate-float">
+      <Navbar />
+
+      <main className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
+        {/* Decorative elements */}
+        <div className="absolute top-20 left-10 animate-float">
           <SparklesIcon className="w-8 h-8 text-yellow-400 opacity-50" />
         </div>
         <div className="absolute top-40 right-20 animate-float animation-delay-2000">
@@ -30,9 +33,9 @@ export default function Home() {
         <div className="absolute bottom-20 left-1/4 animate-float animation-delay-4000">
           <TrendingUpIcon className="w-12 h-12 text-green-400 opacity-50" />
         </div>
-         {/* Hero Section */}
 
-         <div className="text-center py-20 lg:py-32 relative">
+        {/* Hero Section */}
+        <div className="text-center py-20 lg:py-32 relative">
           <RocketIcon className="w-16 h-16 text-purple-500 mx-auto mb-6 animate-bounce" />
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
             AI-Powered Social Media Content Generator
@@ -57,8 +60,8 @@ export default function Home() {
           </div>
         </div>
 
-         {/* Features Section */}
-         <div className="py-20" id="features">
+        {/* Features Section */}
+        <div className="py-20" id="features">
           <h2 className="text-3xl font-bold mb-16 text-center text-white">
             Supercharge Your Social Media Presence
           </h2>
@@ -101,8 +104,8 @@ export default function Home() {
           </div>
         </div>
 
-          {/* Benefits Section */}
-          <div className="py-20 bg-gray-900 rounded-3xl my-20 relative">
+        {/* Benefits Section */}
+        <div className="py-20 bg-gray-900 rounded-3xl my-20 relative">
           <div className="absolute top-0 left-0 w-full h-full overflow-hidden rounded-3xl">
             <svg
               className="absolute w-full h-full"
@@ -152,8 +155,8 @@ export default function Home() {
           </div>
         </div>
 
- {/* CTA Section */}
- <div className="text-center py-20 relative">
+        {/* CTA Section */}
+        <div className="text-center py-20 relative">
           <div className="absolute top-10 right-10 animate-spin-slow">
             <svg
               className="w-20 h-20 text-blue-500 opacity-20"
@@ -198,8 +201,7 @@ export default function Home() {
           )}
           <p className="mt-4 text-gray-400">No credit card required</p>
         </div>
-
       </main>
-     </div>
+    </div>
   );
 }
